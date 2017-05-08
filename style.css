@@ -1,0 +1,190 @@
+body {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 1375px;
+    margin: 0 auto;
+}
+
+aside {
+    padding: 15px;
+}
+
+.image-grid-container {
+    width: 100%;
+    max-width: 1330px;
+    min-width: 250px;
+
+}
+
+.image-grid-container h3 {
+    text-align:right;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer p a {
+    margin-right:25px;
+}
+
+
+/* ----------- iPhone 5 and 5s ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      #container {
+          width: 300px;
+          border: 1px solid red;
+          margin: 0 auto;
+      }
+
+      .image-grid-container {
+          width: 90%;
+          margin: 0 auto;
+
+      }
+
+      .image-grid-container h3 {
+          text-align:right;
+          font-size: 18px;
+      }
+
+      .image-grid {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .image-box {
+          width: 100%;
+          max-width: 50px;
+          margin-right: 17px;
+          margin-bottom: 15px;
+          align-items:center;
+      }
+
+      img {
+          height: auto;
+          width: 100%;
+          max-width: 50px
+      }
+
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      #container {
+          width: 1024px;
+          margin: 0 auto;
+      }
+
+      aside {
+          font-size: 100%;
+          width: 85%;
+          padding: 25px;
+          margin: 0 auto;
+      }
+
+      .image-grid-container {
+          width: 90%;
+          margin: 0 auto;
+
+      }
+
+      .image-grid-container h3 {
+          text-align:right;
+          font-size: 20px;
+          margin-bottom: 25px;
+      }
+
+      .image-grid {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .image-box {
+          width: 100%;
+          max-width: 150px;
+          margin-right: 35px;
+          margin-bottom: 35px;
+          align-items:center;
+      }
+
+      img {
+          height: auto;
+          width: 100%;
+          max-width: 100px
+      }
+
+}
+
+
+/* ----------- Desktop ----------- */
+/* Portrait and Landscape */
+
+@media only screen and (min-width : 1025px) {
+
+    #container {
+        width: 1025px;
+        margin: 0 auto;
+    }
+
+    aside {
+        font-size: 100%;
+        width: 85%;
+        padding: 25px;
+        margin: 0 auto;
+    }
+
+    .image-grid-container {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .image-grid-container h3 {
+        text-align:right;
+        font-size: 20px;
+    }
+
+    .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-box {
+        width: 100%;
+        max-width: 125px;
+        margin-right: 59px;
+        margin-bottom: 50px;
+        align-items:center;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+        max-width: 150px
+    }
+
+}
